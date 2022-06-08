@@ -1,0 +1,57 @@
+{
+  "name": "cb-nft-test",
+  "version": "1.0.0",
+  "description": "Cerulean Blue Contracts - Test",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "ctest": "yarn compile && yarn test",
+    "lint": "npx solhint contracts/**/*.sol && npx solhint contracts/**/**/*.sol",
+    "clean": "npx hardhat clean",
+    "accounts": "npx hardhat accounts",
+    "prettier": "prettier --write contracts/**/*.sol",
+    "coverage": "npx hardhat coverage",
+    "deploy-rinkeby": "npx hardhat run scripts/deploy.js --network rinkeby",
+    "verify-rinkeby-1": "npx hardhat verify --network rinkeby 0x2BeEAa0F1f9475150F36C9DC63676f5aEf64334E \"BASEURI:TODO\"",
+    "verify-rinkeby-2": "npx hardhat verify --network rinkeby 0x2DA15e36a26CD30126733c143383793cddA5f1eB \"BASEURI:TODO\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazunetakeda25/cb-nft-test"
+  },
+  "author": "Kazune Takeda",
+  "license": "Apache License",
+  "bugs": {
+    "url": "https://github.com/kazunetakeda25/cb-nft-test.git/issues"
+  },
+  "homepage": "https://github.com/kazunetakeda25/cb-nft-test.git#README",
+  "devDependencies": {
+    "@ethersproject/bignumber": "^5.4.0",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "bn.js": "^5.2.0",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "chai-bn": "^0.3.0",
+    "dotenv": "^10.0.0",
+    "eth-gas-reporter": "^0.2.22",
+    "ethereum-waffle": "^3.0.0",
+    "ethers": "^5.6.8",
+    "hardhat": "^2.9.8",
+    "fs": "^0.0.1-security",
+    "prettier": "^2.4.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.6",
+    "solidity-coverage": "^0.7.18"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/contracts-upgradeable": "^4.6.0",
+    "@openzeppelin/test-helpers": "^0.5.15"
+  }
+}
