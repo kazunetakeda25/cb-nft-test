@@ -18,7 +18,7 @@ contract CBNFT2 is ERC721, ERC721Enumerable, ERC721Holder, Ownable {
     uint256 private constant _ENTERED = 2;
 
     string public baseURI;
-    address public swappableContract; // ERC721 contract address (CBNFT2)
+    address public swappableContract; // ERC721 contract address (CBNFT1)
 
     event BaseURIChanged(string baseURI_);
     event SwappableContractChanged(address indexed swappableContract_);
